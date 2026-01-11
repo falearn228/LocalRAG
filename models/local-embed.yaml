@@ -1,0 +1,5 @@
+name: local-embed
+backend: llama-cpp
+embeddings: true
+parameters:
+  model: all-MiniLM-L6-v2-Q3_K_L.gguf

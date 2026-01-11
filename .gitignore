@@ -1,0 +1,62 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# Build output
+/bin/
+/dist/
+/build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# LocalAI model files (large binary files)
+models/*.gguf
+models/*.gguf.partial
+models/*.bin
+models/*.safetensors
+
+# Qdrant persistent data
+qdrant_data/
+
+# LocalAI cache and temporary files
+.cache/
+tmp/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS specific
+Thumbs.db
+.DS_Store
+*.Zone.Identifier
+
+# Docker volumes (if mounted locally)
+docker-volumes/
+
+# Temporary files
+*.tmp
+*.temp

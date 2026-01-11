@@ -1,0 +1,13 @@
+name: local-llm
+backend: llama-cpp
+# Дублируем на верхнем уровне
+context_size: 4096 
+parameters:
+  model: Qwen3VL-8B-Instruct-Q4_K_M.gguf
+  # И внутри параметров тоже
+  context_size: 4096 
+  gpu_layers: 99
+  # Важно: уменьшаем размер батча, это тоже экономит VRAM
+  batch: 256
+  # Отключаем mmap, если VRAM на пределе (заставит грузить в RAM, но медленнее)
+  mmap: false
